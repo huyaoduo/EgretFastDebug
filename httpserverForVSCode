@@ -1,5 +1,0 @@
-#!/bin/bash
-
-DIR="$( cd "$( dirname "$0" )" && pwd )"
-cd $DIR
-http-server $DIR/../ -c-1

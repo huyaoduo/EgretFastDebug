@@ -1,15 +1,48 @@
 {
-  "name": "fastdebug",
-  "version": "1.0.0",
-  "description": "",
-  "main": "main.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {},
-  "devDependencies": {
-    "node-watch": "^0.6.2"
-  }
+	"name": "egret-fast-debug",
+	"displayName": "Egret Fast Debug",
+	"description": "A tool for Egret project which makes debug faster",
+	"version": "0.0.1",
+	"publisher": "yaoduoHu",
+	"icon": "icon/icon.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/huyaoduo/EgretFastDebug"
+	},
+	"engines": {
+		"vscode": "^1.36.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onLanguage:typescript",
+		"onCommand:extension.egretFastDebug"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.egretFastDebug",
+				"title": "Egret Fast Debug"
+			}
+		]
+	},
+	"scripts": {
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^5.2.6",
+		"@types/node": "^10.12.21",
+		"@types/vscode": "^1.36.0",
+		"eslint": "^5.13.0",
+		"glob": "^7.1.4",
+		"mocha": "^6.1.4",
+		"typescript": "^3.3.1",
+		"vscode-test": "^1.0.0-next.0"
+	},
+	"dependencies": {
+		"jsonfile": "^5.0.0"
+	}
 }
