@@ -2,7 +2,15 @@
 
 ## Fast Debug for Egret engine
 
-此插件将在vscode中,打开白鹭项目的ts文件时被激活,开始监听ts文件更改
+## install
+
+    直接在vscode的插件商店中搜索"egret fast debug"安装
+
+    或本地安装:cmd+shift+p 选择使用vsix安装
+
+## introduce
+
+    此插件将在vscode中,打开白鹭项目的ts文件时被激活,开始监听ts文件更改
     
     当修改脚本时,将自动编译ts代码至js以及对应js.map,并放入bin-debug对应目录
     
@@ -14,10 +22,32 @@
 
    use vscode fileWatcher to watch .ts file if changed
 
-## Requirements
+   使用vscode监测工作区白鹭项目的ts文件改动
 
-    dependences:nodejs,tsc
+## Dependencies
 
-### 1.0.0
+    nodejs,typescript
+
+    To confirm your node and typescript version,use "node -v" and "tsc -v".
+
+    确保环境中已安装node,typescript
+    
+    --add:0.0.2版本内置typescript依赖,无需单独安装了
+
+### 0.0.1
 
 Init tool
+
+初始化
+
+### 0.0.2
+
+Add a necessary dependency into the package
+
+添加了一个必要依赖至包体中
+
+### 0.0.3
+
+support egret wing3
+
+支持egret wing3编辑器
