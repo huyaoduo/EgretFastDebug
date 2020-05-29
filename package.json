@@ -2,7 +2,7 @@
 	"name": "egret-fast-debug",
 	"displayName": "Egret Fast Debug",
 	"description": "A tool for Egret project which makes debug faster",
-	"version": "0.0.3",
+	"version": "0.0.5",
 	"publisher": "yaoduoHu",
 	"icon": "icon/icon.png",
 	"repository": {
