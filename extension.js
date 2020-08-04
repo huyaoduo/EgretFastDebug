@@ -27,7 +27,7 @@ function activate() {
 	let head = isWing ? wing : vscode;
 	if (rootPath) {
 		let list = fs.readdirSync(rootPath);
-		if (list.indexOf('.wing') != -1) {
+		if (list.indexOf('egretProperties.json') != -1) {
 			console.log(rootPath);
 			let watcher = head.workspace.createFileSystemWatcher(rootPath + '/src/**/*.ts');
 			watcher.onDidChange((url) => {

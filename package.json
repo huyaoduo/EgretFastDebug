@@ -2,7 +2,7 @@
 	"name": "egret-fast-debug",
 	"displayName": "Egret Fast Debug",
 	"description": "A tool for Egret project which makes debug faster",
-	"version": "0.0.5",
+	"version": "1.0.0",
 	"publisher": "yaoduoHu",
 	"icon": "icon/icon.png",
 	"repository": {
@@ -10,13 +10,13 @@
 		"url": "https://github.com/huyaoduo/EgretFastDebug"
 	},
 	"engines": {
-		"vscode": "^1.36.0"
+		"vscode": "^1.47.3"
 	},
 	"categories": [
 		"Other"
 	],
 	"activationEvents": [
-		"onLanguage:typescript",
+		"workspaceContains:egretProperties.json",
 		"onCommand:extension.egretFastDebug"
 	],
 	"main": "./extension.js",
@@ -42,6 +42,7 @@
 		"@types/vscode": "^1.36.0"
 	},
 	"dependencies": {
+		"universalify": "^0.1.2",
 		"jsonfile": "^5.0.0",
 		"typescript": "^3.3.1"
 	}
