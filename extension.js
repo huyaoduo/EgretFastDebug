@@ -146,6 +146,7 @@ function createFile(rootPath, fsPath, cb) {
 		let manifestPath = path.join(rootPath, 'manifest.json');
 		let temp = fsPath.replace(path.join(rootPath, 'src'), 'bin-debug');
 		let newContent = temp.replace('.ts', '.js');
+		newContent = newContent.replace(/\\/g, '/');
 		//console.log(newContent);
 		jsonfile.readFile(manifestPath, function (err, data) {
 			if (err) throw err;
@@ -175,6 +176,7 @@ function delFile(rootPath, fsPath, cb) {
 		let manifestPath = path.join(rootPath, 'manifest.json');
 		let temp = fsPath.replace(path.join(rootPath, 'src'), 'bin-debug');
 		let newContent = temp.replace('.ts', '.js');
+		newContent = newContent.replace(/\\/g, '/');
 		//console.log(newContent);
 		let data = jsonfile.readFileSync(manifestPath);
 		data.game = data.game.filter(item => item != newContent);
